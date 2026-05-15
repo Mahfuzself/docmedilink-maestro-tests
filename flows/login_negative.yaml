@@ -1,0 +1,10 @@
+appId: com.app.docmedilink
+---
+- runFlow:
+    file: "../pages/launch_page.yaml"
+- runFlow:
+    file: "../pages/login_page.yaml"
+    env:
+      EMAIL: "wrong@email.com"
+      PASSWORD: "wrongpass"
+- assertVisible: "The provided credentials are not correct"

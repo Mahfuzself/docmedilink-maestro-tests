@@ -1,0 +1,13 @@
+appId: com.app.docmedilink
+---
+- tapOn:
+    point: "360, 664"
+- inputText: "${EMAIL}"
+- tapOn:
+    point: "360, 858"
+- inputText: "${PASSWORD}"
+- pressKey: Enter
+- tapOn:
+    point: "360, 1136"
+- waitForAnimationToEnd:
+    timeout: 2000

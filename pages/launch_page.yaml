@@ -1,0 +1,9 @@
+appId: com.app.docmedilink
+---
+- launchApp
+- waitForAnimationToEnd:
+    timeout: 8000
+- tapOn:
+    text: "Docmedilink"
+- waitForAnimationToEnd:
+    timeout: 3000
