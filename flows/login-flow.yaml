@@ -1,0 +1,20 @@
+appId: ${APP_ID}
+---
+- launchApp
+
+- tapOn:
+    text: "Email"
+- inputText: ${TEST_USERNAME}
+
+- tapOn:
+    text: "Password"
+- inputText: ${TEST_PASSWORD}
+
+- tapOn:
+    text: "Login"
+
+- waitForAnimationToEnd:
+    timeout: 5
+
+- assertVisible:
+    text: "Dashboard"
